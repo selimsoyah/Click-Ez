@@ -1,0 +1,76 @@
+
+
+/* 
+Green : #CDE9D6 
+Blue : #D2E4FD
+Yellow : #FFF1CB
+Pink : #F8D3CF
+*/
+.mainBoxBf{
+    padding:10px;
+    height:100vh;
+    width:300px;
+    margin:0!important;
+    /* background: #fc5edc57; */
+    background:#989898;
+    transition:all 0.2s;
+  }
+  .af{
+    margin: 20;
+    white-space: nowrap;
+    visibility: hidden;
+  }
+  .bf{
+    margin: 20;
+    white-space: nowrap;
+    visibility: visible;
+    transition-delay: 0.1s ;
+  }
+  .mainBoxAf{
+    padding:10px;
+    height:100vh;
+    width:70px;
+    margin:0;
+    background:#9898983b;
+    transition:all 0.1s;
+  }
+  .test{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .burger  {
+    font-size :50px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    /* margin-left:30px; */
+  }
+  .mainLogo{
+    height:50px;
+    width:auto;
+  }
+  .links{
+  display: flex;
+  align-items: center;
+  height:40px;
+  padding: 10px 15px;
+  gap:15px;
+  cursor: pointer;
+  }
+  .links .one{
+    font-size:20px; 
+    text-decoration: none;
+    cursor: pointer;
+    color:black;  
+  }
+  .links .two {
+    text-decoration: none;
+    color:black;
+    width: 300px;
+  }
+  .links:hover{
+   background-color: white;
+  }
+ .test img{
+    height:100px!important;
+  }

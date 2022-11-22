@@ -1,0 +1,9 @@
+.TaskLayout {
+  display:flex;
+  background:  #CFCFC5;
+}
+.taskApp{
+  /* margin-left:100px; */
+  width: 100%;
+}
+

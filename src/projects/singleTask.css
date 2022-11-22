@@ -1,0 +1,50 @@
+/* .done{
+    text-decoration:line-through;
+}
+.unDone{
+    text-decoration: none;
+} */
+.boxDone{
+    width:auto;
+    border:2px solid green;
+    padding:20px;
+    margin-top:20px ;
+    margin-bottom : 40px;
+    /* background-color: green; */
+}
+.boxUnDone{
+    width:auto;
+    border:2px solid black;
+    padding:20px;
+    margin-top:20px ;
+    margin-bottom : 40px;
+}
+.mainBox{
+    width:auto;
+    border:2px solid black;
+    padding:20px;
+    
+}
+.secBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    margin-right:20px;
+    margin-left:20px;
+    white-space: nowrap;
+}
+.date p{
+    margin:0!important;
+}
+.check {
+    cursor: pointer;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.secBox button{
+    border:none;
+    background-color: #CFCFC5;
+}
