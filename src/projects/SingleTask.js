@@ -4,7 +4,7 @@ import './list.css'
 import { BiTrashAlt } from "react-icons/bi";
 function SingleTask({ task }) {
     return (
-        <div className='Button' >
+        <div className={task.visibility == false ? 'Button' : 'noButton'} >
             < div className={task.done == true ? 'boxDone' : 'boxUnDone'} >
             
                 <h2 className={task.done == true ? 'done' : 'unDone'}>{task.text}</h2>

@@ -21,7 +21,6 @@ function List({ list }) {
                     const { id } = data
                     if (data.priority == true && data.done==false)
                     {
-                        <p>ASBA1</p>
                         return <SingleTask key={id} task={data} />
                         
                     }
@@ -34,9 +33,7 @@ function List({ list }) {
                     const { id } = data
                     if (data.done== true)
                     {
-                        <p>ASBA</p>
                         return <SingleTask key={id} task={data} />
-                        
                     }
                    
                 })}
