@@ -1,9 +1,11 @@
 import React from 'react';
 import SingleTask from './SingleTask';
+import { useState,useReducer } from 'react';
 import './list.css'
 function List({ list }) {
+    const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
     return (
-        <div className='List' style={{ display: "flex", justifyContent: "space-around" , borde:"2px,solid,black"}}>
+        <div className='List' onChange={forceUpdate}style={{ display: "flex", justifyContent: "space-around" , marginTop:"20px"}}>
             <div className='listDisplay' >
                 <h2> Assigned Tasks </h2>
                 {list.map((data) => {

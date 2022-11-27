@@ -2,7 +2,10 @@ import React from 'react';
 import "./singleTask.css"
 import './list.css'
 import { BiTrashAlt } from "react-icons/bi";
+import {useReducer} from 'react'
 function SingleTask({ task }) {
+
+    const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
     return (
         <div className={task.visibility == false ? 'Button' : 'noButton'} >
             < div className={task.done == true ? 'boxDone' : 'boxUnDone'} >
@@ -17,6 +20,7 @@ function SingleTask({ task }) {
                         else {
                             task.done = false
                         }
+                        
                     }} /> Done
 
 
@@ -27,6 +31,7 @@ function SingleTask({ task }) {
                         else {
                             task.priority = false
                         }
+                        
                     }} /> High 
 
 
@@ -42,6 +47,7 @@ function SingleTask({ task }) {
 
                     <button variant="danger" onClick={() => {
                         task.visibility = false
+                        forceUpdate()
                     }}><BiTrashAlt /></button>
                 </div>
 
