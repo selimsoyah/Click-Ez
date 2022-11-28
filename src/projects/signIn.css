@@ -1,7 +1,7 @@
 .Body{
     font-family: 'Segoe UI';
     min-height: 100vh;
-    background: linear-gradient(to right,#DEE2E6 , #495057);
+    background: red;
     display: flex;
     align-items: center;
     justify-content: center;
