@@ -1,5 +1,6 @@
 .Body{
     font-family: 'Segoe UI';
+    height:100%;
     min-height: 100vh;
     background: linear-gradient(to right,#DEE2E6 , #495057);
     display: flex;
@@ -7,9 +8,11 @@
     justify-content: center;
 }
 .login-card{
-    width: 450px;
+    width: 350px;
     background-color: rgba(255, 255, 255, 0.346);
     padding:64px;
+    margin-bottom:200px;
+    margin-top:80px;
     border-radius:10px ;
     position: relative;
 }
