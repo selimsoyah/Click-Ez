@@ -15,15 +15,18 @@ function AddTask() {
     const[listTask,setListTask] = useState(lists)
     const [view , setView]= useState(true)
     const len = listTask.length 
-    const add = ()=>{
+    const addTaskBar = ()=>{
         setView(false)
+    }
+    const removeTaskBar = ()=>{
+        setView(true)
     }
     return (
         
        <div className='AddTask'>
             {view ? (
                 <div className='addButton'>
-                <FaPlusSquare onClick={add} id="button"/>
+                <FaPlusSquare onClick={addTaskBar} id="button"/>
                 </div>
             ):(
                 <div className='List'>
@@ -38,10 +41,11 @@ function AddTask() {
                     <Button variant="primary" type="submit"  onClick={(e)=>{
                         e.preventDefault()
                         setListTask([...listTask,{id:len , text : task ,done: false, date: new Date(),visibility:true , priority:false}])
-                        setView(true)
+                        removeTaskBar()
                     }}>
                         ADD
                     </Button>
+                    <Button variant='danger' onClick={removeTaskBar}>Cancel</Button>
                 </Form>
                 {console.log(listTask)}
             </div>
